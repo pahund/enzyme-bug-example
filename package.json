@@ -1,0 +1,27 @@
+{
+  "name": "enzyme-bug-example",
+  "version": "0.0.1",
+  "description": "Reproducting Enzyme issue 355",
+  "main": "./frontend/test/enzymeTest.js",
+  "scripts": {
+    "test": "node_modules/.bin/_mocha --compilers js:node_modules/babel-register,js:./frontend/test/setup.js --recursive './frontend/test/**/*Test.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pahund/enzyme-bug-example"
+  },
+  "author": "Patrick Hund <pahund@team.mobile.de>",
+  "license": "WTFPL",
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.5",
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "chai": "^3.5.0",
+    "enzyme": "^2.2.0",
+    "jsdom": "^8.3.1",
+    "mocha": "^2.4.5",
+    "react": "^15.0.1",
+    "react-addons-test-utils": "^15.0.2"
+  }
+}
